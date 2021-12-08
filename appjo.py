@@ -13,7 +13,7 @@ from streamlit_drawable_canvas import st_canvas
 
 from random import randrange
 
-#MODEL_DIR = os.path.join(os.path.dirname('__file__'), 'model.h5')
+#MODEL_DIR = os.path.join(os.path.dirname('__file__'), 'modelF.h5')
 
 ### Visualization function ###
 def viz_num(num):
@@ -24,9 +24,6 @@ def viz_num(num):
     plt.axis("off")
     fig.show()
     return fig
-
-def increment(result):
-    st.session_state.{result} += 1
 
 ### Load / Preprocess / Predict test.csv dataset ###
 
